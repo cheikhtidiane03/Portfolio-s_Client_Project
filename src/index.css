@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;1,9..40,300;1,9..40,400&display=swap');
+
+/* ===== RESET ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #08080C;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #08080C;
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #FFD700, #FF8C00);
+  border-radius: 4px;
+}
+
+/* ===== SELECTION ===== */
+::selection {
+  background: rgba(255, 215, 0, 0.25);
+  color: #FFD700;
+}
+
+/* ===== PLACEHOLDER ===== */
+::placeholder {
+  color: rgba(255, 255, 255, 0.2);
+}
+
+/* ===== RESPONSIVE HELPERS ===== */
+@media (max-width: 900px) {
+  .about-grid,
+  .skills-grid,
+  .contact-grid {
+    grid-template-columns: 1fr !important;
+    gap: 48px !important;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr !important;
+  }
+
+  .desktop-nav,
+  .cta-btn {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: flex !important;
+  }
+}
